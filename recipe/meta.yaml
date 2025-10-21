@@ -1,4 +1,4 @@
-{% set version = '1.0' %}
+{% set version = "1.1.0" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,10 +9,10 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/MakefileR_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/MakefileR/MakefileR_{{ version }}.tar.gz
-  sha256: 811e3fe6e451dfd633f9220118ddcb180c9d7126d92fb3167c282b4d058bd2dd
+  sha256: d4319083881abfc190ada3d998a76711ec429fa970f4231b12bbdecc7b5a2628
 
 build:
-  number: 2
+  number: 0
   noarch: generic
   rpaths:
     - lib/R/lib/
